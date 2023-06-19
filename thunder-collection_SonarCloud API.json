@@ -1,0 +1,636 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "SonarCloud API",
+    "dateExported": "2023-06-19T10:13:12.424Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "09d494a5-af71-4613-a038-10fc003f3d56",
+            "name": "Quality Gates",
+            "containerId": "",
+            "created": "2023-06-19T09:42:18.992Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "433bf725-cb09-4c31-8632-ceb4b0c40154",
+            "name": "Authentication",
+            "containerId": "",
+            "created": "2023-06-19T09:47:18.755Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "39396f90-f3be-4bc9-9f18-ba0653cf3183",
+            "name": "Projects",
+            "containerId": "",
+            "created": "2023-06-19T09:48:14.803Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "057460cb-8643-4b00-9fa4-4ed1c63f3069",
+            "name": "Components",
+            "containerId": "",
+            "created": "2023-06-19T09:52:50.967Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "d4421764-d9c7-4836-a6f5-7bd829ee54b6",
+            "name": "Issues",
+            "containerId": "",
+            "created": "2023-06-19T09:57:37.213Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "682f21bb-2468-45a2-8801-5180ef5d7260",
+            "name": "Metrics",
+            "containerId": "",
+            "created": "2023-06-19T10:11:09.498Z",
+            "sortNum": 60000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "97f429fc-4fbb-42d5-b20a-01e0d154eeb9",
+            "colId": "703ab6fc-8072-44d3-a5fb-abdbe9affbd0",
+            "containerId": "057460cb-8643-4b00-9fa4-4ed1c63f3069",
+            "name": "Return component with specified measures. (i.e. CodeCoverage)",
+            "url": "/measures/component?component=OutSystems_OutSystems.IdentityBusiness.Service&metricKeys=coverage, complexity&deprecated=false",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2023-06-12T09:19:05.652Z",
+            "modified": "2023-06-19T10:09:35.365Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "additionalFields",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "branch",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "component",
+                    "value": "OutSystems_OutSystems.IdentityBusiness.Service",
+                    "isPath": false
+                },
+                {
+                    "name": "metricKeys",
+                    "value": "coverage, complexity",
+                    "isPath": false
+                },
+                {
+                    "name": "pullRequest",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "section",
+                    "value": "response",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "deprecated",
+                    "value": "false",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "b108f0a2-e660-4672-a380-a14c6e548b45",
+            "colId": "703ab6fc-8072-44d3-a5fb-abdbe9affbd0",
+            "containerId": "09d494a5-af71-4613-a038-10fc003f3d56",
+            "name": "Get the quality gate of a project",
+            "url": "/qualitygates/get_by_project?project=OutSystems_rd-phoenix-e2e-tests&deprecated=false&organization={{sonar_api_organization}}",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-12T09:19:05.645Z",
+            "modified": "2023-06-19T09:42:20.864Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "project",
+                    "value": "OutSystems_rd-phoenix-e2e-tests",
+                    "isPath": false
+                },
+                {
+                    "name": "deprecated",
+                    "value": "false",
+                    "isPath": false
+                },
+                {
+                    "name": "organization",
+                    "value": "{{sonar_api_organization}}",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "4776bfb2-5029-4a07-a4c3-ef228ec4100e",
+            "colId": "703ab6fc-8072-44d3-a5fb-abdbe9affbd0",
+            "containerId": "433bf725-cb09-4c31-8632-ceb4b0c40154",
+            "name": "Check credentials",
+            "url": "/authentication/validate?deprecated=false&section=response",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-12T09:19:05.647Z",
+            "modified": "2023-06-19T09:47:21.300Z",
+            "headers": [
+                {
+                    "name": "-u",
+                    "value": "5ce93108917f6634f7ee3ec49f9fd96fcb395218",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "deprecated",
+                    "value": "false",
+                    "isPath": false
+                },
+                {
+                    "name": "section",
+                    "value": "response",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "ad8f82ad-49d9-4d88-ae6f-ccd7fcf23eac",
+            "colId": "703ab6fc-8072-44d3-a5fb-abdbe9affbd0",
+            "containerId": "39396f90-f3be-4bc9-9f18-ba0653cf3183",
+            "name": "Search for projects or views to administrate them",
+            "url": "/projects/search?organization={{sonar_api_organization}}&deprecated=false",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-12T09:19:05.648Z",
+            "modified": "2023-06-19T09:50:42.331Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "organization",
+                    "value": "{{sonar_api_organization}}",
+                    "isPath": false
+                },
+                {
+                    "name": "deprecated",
+                    "value": "false",
+                    "isPath": false
+                },
+                {
+                    "name": "analyzedBefore",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "onProvisionedOnly",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "p",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "projects",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "ps",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "q ",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "qualifiers",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "6f54c2b9-9a86-46c7-84aa-9052b11e7c45",
+            "colId": "703ab6fc-8072-44d3-a5fb-abdbe9affbd0",
+            "containerId": "057460cb-8643-4b00-9fa4-4ed1c63f3069",
+            "name": "Search for components",
+            "url": "/components/search?deprecated=false&organization={{sonar_api_organization}}&ps=500",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-12T09:19:05.649Z",
+            "modified": "2023-06-19T09:52:52.942Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "deprecated",
+                    "value": "false",
+                    "isPath": false
+                },
+                {
+                    "name": "organization",
+                    "value": "{{sonar_api_organization}}",
+                    "isPath": false
+                },
+                {
+                    "name": "ps",
+                    "value": "500",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "151da92d-aa94-4de7-a0df-63c207b2b21c",
+            "colId": "703ab6fc-8072-44d3-a5fb-abdbe9affbd0",
+            "containerId": "d4421764-d9c7-4836-a6f5-7bd829ee54b6",
+            "name": "Search for issues",
+            "url": "/issues/search?section=params&componentKeys=OutSystems_extp-web-testing,OutSystems_feature-toggle-service,cordova-plugin-file-android,&deprecated=false",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-12T09:19:05.651Z",
+            "modified": "2023-06-19T10:07:10.407Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "section",
+                    "value": "params",
+                    "isPath": false
+                },
+                {
+                    "name": "additionalFields",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "asc",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "assigned",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "assignees",
+                    "value": "'__me__'",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "author",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "branch",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "codeVariants",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "componentKeys",
+                    "value": "OutSystems_extp-web-testing,OutSystems_feature-toggle-service,cordova-plugin-file-android,",
+                    "isPath": false
+                },
+                {
+                    "name": "createdAfter",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "createdAt",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "createdBefore",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "createdInLast",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "cwe",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "deprecated",
+                    "value": "false",
+                    "isPath": false
+                },
+                {
+                    "name": "facets",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "inNewCodePeriod",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "issues",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "languages",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "onComponentOnly",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "owaspAsvs-4.0",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "owaspAsvsLevel",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "owaspTop10",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "owaspTop10-2021 ",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "p ",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "pciDss-3.2",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "pciDss-4.0",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "ps",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "pullRequest",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "resolutions",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "resolved",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "rules",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "s",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "scopes",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "severities",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "sonarsourceSecurity",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "statuses",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "tags",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "timeZone",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "types",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "859d9282-98c8-4a50-ba95-ea3aadf07780",
+            "colId": "703ab6fc-8072-44d3-a5fb-abdbe9affbd0",
+            "containerId": "682f21bb-2468-45a2-8801-5180ef5d7260",
+            "name": "Search for metrics",
+            "url": "/metrics/search?deprecated=false&section=response&ps=500",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-12T09:19:05.653Z",
+            "modified": "2023-06-19T10:11:12.503Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "deprecated",
+                    "value": "false",
+                    "isPath": false
+                },
+                {
+                    "name": "section",
+                    "value": "response",
+                    "isPath": false
+                },
+                {
+                    "name": "ps",
+                    "value": "500",
+                    "isPath": false
+                },
+                {
+                    "name": "p",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "abdb7024-3435-4571-8324-72d4e73ecc85",
+            "colId": "703ab6fc-8072-44d3-a5fb-abdbe9affbd0",
+            "containerId": "09d494a5-af71-4613-a038-10fc003f3d56",
+            "name": "Get the quality gate status of a project or a Compute Engine task.",
+            "url": "/qualitygates/project_status?projectKey=OutSystems_rd-phoenix-e2e-tests&deprecated=false",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-12T09:19:05.646Z",
+            "modified": "2023-06-19T09:44:14.420Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "projectKey",
+                    "value": "OutSystems_rd-phoenix-e2e-tests",
+                    "isPath": false
+                },
+                {
+                    "name": "deprecated",
+                    "value": "false",
+                    "isPath": false
+                },
+                {
+                    "name": "analysisId",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "branch",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "projectId",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "pullRequest",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "904973d9-4799-4501-b4a7-53b4fa1d9ac0",
+            "colId": "703ab6fc-8072-44d3-a5fb-abdbe9affbd0",
+            "containerId": "09d494a5-af71-4613-a038-10fc003f3d56",
+            "name": "Get a list of quality gates",
+            "url": "/qualitygates/list?organization={{sonar_api_organization}}&deprecated=false",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-06-12T09:19:05.650Z",
+            "modified": "2023-06-19T09:56:57.620Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "organization",
+                    "value": "{{sonar_api_organization}}",
+                    "isPath": false
+                },
+                {
+                    "name": "deprecated",
+                    "value": "false",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "auth": {
+            "type": "bearer",
+            "bearer": "{{sonar_api_token}}"
+        },
+        "options": {
+            "baseUrl": "https://sonarcloud.io/api"
+        },
+        "envId": "3e229c18-dd40-4921-96e2-ea4b38320363"
+    }
+}

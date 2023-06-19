@@ -1,0 +1,115 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Snyk API",
+    "dateExported": "2023-06-19T10:13:35.927Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "9e3a53e0-b528-42fb-b45f-031f98f7d799",
+            "name": "Org",
+            "containerId": "",
+            "created": "2023-06-15T09:16:36.098Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "90f2d108-54c8-4f4d-b33e-8cd5dddde8b8",
+            "name": "Issues",
+            "containerId": "",
+            "created": "2023-06-15T09:16:36.096Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "ac8c3c73-8751-46ea-b080-8ce6bf66cf28",
+            "colId": "991aabd4-bd88-421e-88e9-f8dce55cb302",
+            "containerId": "9e3a53e0-b528-42fb-b45f-031f98f7d799",
+            "name": "List accessible organizations",
+            "url": "/orgs?version={{snyk_api_version}}&limit=100",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-06-15T09:16:36.095Z",
+            "modified": "2023-06-19T10:11:52.220Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "version",
+                    "value": "{{snyk_api_version}}",
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "100",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "30b0c30f-5650-479f-b7ee-c9045dda480c",
+            "colId": "991aabd4-bd88-421e-88e9-f8dce55cb302",
+            "containerId": "9e3a53e0-b528-42fb-b45f-031f98f7d799",
+            "name": "Get organization",
+            "url": "/orgs/{org_id}?version={{snyk_api_version}}",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-06-15T09:16:36.096Z",
+            "modified": "2023-06-19T10:12:02.433Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "org_id",
+                    "value": "4661e3da-f9ad-46db-b409-919df8d40d36",
+                    "isPath": true
+                },
+                {
+                    "name": "version",
+                    "value": "{{snyk_api_version}}",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "7c42ee2c-24e8-4d90-b1e9-3be0cbb76f01",
+            "colId": "991aabd4-bd88-421e-88e9-f8dce55cb302",
+            "containerId": "90f2d108-54c8-4f4d-b33e-8cd5dddde8b8",
+            "name": "List issues for a package",
+            "url": "/orgs/{org_id}/packages/{purl}/issues?version={{snyk_api_version}}",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-06-15T09:16:36.104Z",
+            "modified": "2023-06-19T10:12:10.314Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "purl",
+                    "value": "outsystems-publish-service-ct-job%3Av1.817.33%3A%2Ftest%2F%3F%2F.m2%2Frepository%2Forg%2Fgraalvm%2Fsdk%2Fgraal-sdk%2F22.3.0",
+                    "isPath": true
+                },
+                {
+                    "name": "org_id",
+                    "value": "4661e3da-f9ad-46db-b409-919df8d40d36",
+                    "isPath": true
+                },
+                {
+                    "name": "version",
+                    "value": "{{snyk_api_version}}",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "auth": {
+            "type": "bearer",
+            "bearer": "{{snyk_api_token}}",
+            "bearerPrefix": "token"
+        },
+        "options": {
+            "baseUrl": "https://api.snyk.io/rest"
+        },
+        "envId": "fce9c897-c465-452f-aa2a-2c9db359a367"
+    }
+}

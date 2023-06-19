@@ -1,0 +1,203 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "JIRA Cloud API",
+    "dateExported": "2023-06-19T12:04:37.997Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "75d789fc-6a3a-4c39-babb-b8af53d0eec9",
+            "name": "Issues",
+            "containerId": "",
+            "created": "2023-06-19T11:43:42.077Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "48642cdb-7779-47de-bf40-353b271da36a",
+            "name": "CustomFields",
+            "containerId": "",
+            "created": "2023-06-19T11:47:51.358Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "e6a907b3-c6a5-412d-8d74-fd8b59c6eb2a",
+            "name": "Versions",
+            "containerId": "",
+            "created": "2023-06-19T12:03:47.493Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "e5026517-04d5-4f37-91dd-1a8d85c02341",
+            "colId": "3adde48b-59f6-48f9-9ac3-3386bf968f86",
+            "containerId": "75d789fc-6a3a-4c39-babb-b8af53d0eec9",
+            "name": "Returns the details for an issue",
+            "url": "/issue/{issueIdOrKey}",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-19T11:40:06.832Z",
+            "modified": "2023-06-19T11:43:43.754Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "issueIdOrKey",
+                    "value": "RDMET-28",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "bcf13788-7276-4661-ab15-6e5a0fb14fb7",
+            "colId": "3adde48b-59f6-48f9-9ac3-3386bf968f86",
+            "containerId": "48642cdb-7779-47de-bf40-353b271da36a",
+            "name": "Returns system and custom issue fields according to the following rules",
+            "url": "/field",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-19T11:44:54.275Z",
+            "modified": "2023-06-19T11:47:53.363Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "62f63023-7203-4b9a-964b-dcb8452568ec",
+            "colId": "3adde48b-59f6-48f9-9ac3-3386bf968f86",
+            "containerId": "e6a907b3-c6a5-412d-8d74-fd8b59c6eb2a",
+            "name": "Returns the following counts for a version",
+            "url": "/version/{id}/relatedIssueCounts",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-19T12:03:06.858Z",
+            "modified": "2023-06-19T12:03:51.305Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "41001",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "aaaf4749-2e38-49ca-805d-c678f7f5ec67",
+            "colId": "3adde48b-59f6-48f9-9ac3-3386bf968f86",
+            "containerId": "75d789fc-6a3a-4c39-babb-b8af53d0eec9",
+            "name": "Returns either all transitions or a transition that can be performed by the user on an issue, based on the issue's status.",
+            "url": "/issue/{issueIdOrKey}/transitions",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-19T11:42:46.940Z",
+            "modified": "2023-06-19T11:43:45.411Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "issueIdOrKey",
+                    "value": "RDMET-28",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "7e6403af-2758-498d-ba85-2e727bda2fb2",
+            "colId": "3adde48b-59f6-48f9-9ac3-3386bf968f86",
+            "containerId": "48642cdb-7779-47de-bf40-353b271da36a",
+            "name": "Returns a paginated list of defaults for a custom field.",
+            "url": "/field/{fieldId}/context/defaultValue",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-19T11:46:30.637Z",
+            "modified": "2023-06-19T11:55:50.114Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "fieldId",
+                    "value": "customfield_15370",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "f7b4f5c2-ab07-456f-b677-d8bf9877b23f",
+            "colId": "3adde48b-59f6-48f9-9ac3-3386bf968f86",
+            "containerId": "e6a907b3-c6a5-412d-8d74-fd8b59c6eb2a",
+            "name": "Return a paginated list of all version in a project",
+            "url": "/project/{projectIdOrKey}/version",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-19T12:00:58.312Z",
+            "modified": "2023-06-19T12:03:52.552Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "projectIdOrKey",
+                    "value": "RDLOT",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "24eb924a-7fe6-4e66-a3ac-55ff3bc97701",
+            "colId": "3adde48b-59f6-48f9-9ac3-3386bf968f86",
+            "containerId": "48642cdb-7779-47de-bf40-353b271da36a",
+            "name": "Returns a paginated list of all custom field option for a context",
+            "url": "/field/{fieldId}/context/{contextId}/option",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-06-19T11:55:40.794Z",
+            "modified": "2023-06-19T11:55:40.794Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "fieldId",
+                    "value": "customfield_15370",
+                    "isPath": true
+                },
+                {
+                    "name": "contextId",
+                    "value": "26255",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "8fd0221c-cd44-477f-8f8c-07b225b52ade",
+            "colId": "3adde48b-59f6-48f9-9ac3-3386bf968f86",
+            "containerId": "75d789fc-6a3a-4c39-babb-b8af53d0eec9",
+            "name": "Returns an issue link",
+            "url": "/issueLink/{linkId}",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-06-19T11:59:32.312Z",
+            "modified": "2023-06-19T11:59:57.521Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "linkId",
+                    "value": "",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "auth": {
+            "type": "basic",
+            "basic": {
+                "username": "{{jira_user}}",
+                "password": "{{jira_api_token}}"
+            }
+        },
+        "options": {
+            "baseUrl": "https://outsystemsrd.atlassian.net/rest/api/3"
+        },
+        "envId": "a43b3bb6-1138-4c3e-9383-f0c91156283c"
+    }
+}
