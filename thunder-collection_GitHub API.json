@@ -1,0 +1,293 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GitHub API",
+    "dateExported": "2023-06-21T11:09:36.857Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "bead51ee-50e1-44ac-bbfc-6a17c58b1eed",
+            "name": "Repositories",
+            "containerId": "",
+            "created": "2023-06-21T10:17:24.740Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "f14d14a7-1b4e-4a63-84d5-4145c632109b",
+            "name": "Branches",
+            "containerId": "",
+            "created": "2023-06-21T10:20:21.988Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "980fe7dc-369d-470e-8027-ccb321e19e1f",
+            "name": "Commits",
+            "containerId": "",
+            "created": "2023-06-21T10:25:23.590Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "6c3d37da-72c2-473e-b8b4-5f5bf646e526",
+            "name": "Pull Requests",
+            "containerId": "",
+            "created": "2023-06-21T10:29:44.315Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "d62734c5-07cc-444c-9841-d02c587e6181",
+            "colId": "27dff3de-3ee7-483e-bc3d-bbcfb0440d1b",
+            "containerId": "bead51ee-50e1-44ac-bbfc-6a17c58b1eed",
+            "name": "Get a repository",
+            "url": "/repos/{owner}/{repo}",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-21T10:15:58.530Z",
+            "modified": "2023-06-21T10:21:34.730Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "owner",
+                    "value": "{{github_api_repository_owner}}",
+                    "isPath": true
+                },
+                {
+                    "name": "repo",
+                    "value": "OutSystems.BuildService",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "4efb3f29-9b4b-44e9-b778-fb0f79e163c1",
+            "colId": "27dff3de-3ee7-483e-bc3d-bbcfb0440d1b",
+            "containerId": "bead51ee-50e1-44ac-bbfc-6a17c58b1eed",
+            "name": "List repository teams",
+            "url": "/repos/{owner}/{repo}/teams",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-06-21T10:17:52.393Z",
+            "modified": "2023-06-21T10:21:38.813Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "owner",
+                    "value": "{{github_api_repository_owner}}",
+                    "isPath": true
+                },
+                {
+                    "name": "repo",
+                    "value": "OutSystems.BuildService",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "9b741987-9b32-4857-9a24-3033697861a7",
+            "colId": "27dff3de-3ee7-483e-bc3d-bbcfb0440d1b",
+            "containerId": "f14d14a7-1b4e-4a63-84d5-4145c632109b",
+            "name": "List branches",
+            "url": "/repos/{owner}/{repo}/branches",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-06-21T10:20:31.697Z",
+            "modified": "2023-06-21T10:46:14.973Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "owner",
+                    "value": "{{github_api_repository_owner}}",
+                    "isPath": true
+                },
+                {
+                    "name": "repo",
+                    "value": "OutSystems.BuildServices",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "99da733b-a1c1-49be-8680-d8c1e9604155",
+            "colId": "27dff3de-3ee7-483e-bc3d-bbcfb0440d1b",
+            "containerId": "f14d14a7-1b4e-4a63-84d5-4145c632109b",
+            "name": "Get a branch",
+            "url": "/repos/{owner}/{repo}/branches/{branch}",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-06-21T10:22:08.697Z",
+            "modified": "2023-06-21T10:24:36.856Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "owner",
+                    "value": "{{github_api_repository_owner}}",
+                    "isPath": true
+                },
+                {
+                    "name": "repo",
+                    "value": "OutSystems.BuildService",
+                    "isPath": true
+                },
+                {
+                    "name": "branch",
+                    "value": "ContractTestsBugFixIdentityToken",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "984c0693-039d-4b55-b1b8-0d6191a8a170",
+            "colId": "27dff3de-3ee7-483e-bc3d-bbcfb0440d1b",
+            "containerId": "980fe7dc-369d-470e-8027-ccb321e19e1f",
+            "name": "List commits",
+            "url": "/repos/{owner}/{repo}/commits",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-06-21T10:25:34.099Z",
+            "modified": "2023-06-21T10:25:55.097Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "owner",
+                    "value": "{{github_api_repository_owner}}",
+                    "isPath": true
+                },
+                {
+                    "name": "repo",
+                    "value": "OutSystems.BuildService",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "42913fe3-da9d-41fa-bee7-7b1feb7ed608",
+            "colId": "27dff3de-3ee7-483e-bc3d-bbcfb0440d1b",
+            "containerId": "980fe7dc-369d-470e-8027-ccb321e19e1f",
+            "name": "Get a commit",
+            "url": "/repos/{owner}/{repo}/commits/{ref}",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-06-21T10:27:34.069Z",
+            "modified": "2023-06-21T10:28:33.833Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "owner",
+                    "value": "{{github_api_repository_owner}}",
+                    "isPath": true
+                },
+                {
+                    "name": "repo",
+                    "value": "OutSystems.BuildService",
+                    "isPath": true
+                },
+                {
+                    "name": "ref",
+                    "value": "5de62b7851d00c3c146a28a590d1f9a2b1d02530",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "6fb37fed-9b1a-4d5f-8e9c-8f4b276a4b20",
+            "colId": "27dff3de-3ee7-483e-bc3d-bbcfb0440d1b",
+            "containerId": "6c3d37da-72c2-473e-b8b4-5f5bf646e526",
+            "name": "List pull requests",
+            "url": "/repos/{owner}/{repo}/pulls",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-06-21T10:30:03.622Z",
+            "modified": "2023-06-21T10:30:33.103Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "owner",
+                    "value": "{{github_api_repository_owner}}",
+                    "isPath": true
+                },
+                {
+                    "name": "repo",
+                    "value": "OutSystems.BuildService",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "0fc5ace4-d8fe-4f2c-95b1-d1dcaf8d749d",
+            "colId": "27dff3de-3ee7-483e-bc3d-bbcfb0440d1b",
+            "containerId": "6c3d37da-72c2-473e-b8b4-5f5bf646e526",
+            "name": "Get a pull request",
+            "url": "/repos/{owner}/{repo}/pulls/{pull_number}",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-06-21T10:35:12.017Z",
+            "modified": "2023-06-21T10:36:28.404Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "owner",
+                    "value": "{{github_api_repository_owner}}",
+                    "isPath": true
+                },
+                {
+                    "name": "repo",
+                    "value": "OutSystems.BuildService",
+                    "isPath": true
+                },
+                {
+                    "name": "pull_number",
+                    "value": "2388",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "268321f8-3457-4496-b611-ce1607901105",
+            "colId": "27dff3de-3ee7-483e-bc3d-bbcfb0440d1b",
+            "containerId": "6c3d37da-72c2-473e-b8b4-5f5bf646e526",
+            "name": "List commits on a pull request",
+            "url": "/repos/{owner}/{repo}/pulls/{pull_number}/commits",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-06-21T10:36:53.508Z",
+            "modified": "2023-06-21T10:37:28.494Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "owner",
+                    "value": "{{github_api_repository_owner}}",
+                    "isPath": true
+                },
+                {
+                    "name": "repo",
+                    "value": "OutSystems.BuildService",
+                    "isPath": true
+                },
+                {
+                    "name": "pull_number",
+                    "value": "2388",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "auth": {
+            "type": "bearer",
+            "bearer": "{{github_api_token}}"
+        },
+        "options": {
+            "baseUrl": "https://api.github.com"
+        },
+        "envId": "3bc01f68-c243-4ebd-a7d4-bb97ba8c7b7e"
+    }
+}
